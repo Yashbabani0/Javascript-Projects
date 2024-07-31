@@ -9,40 +9,46 @@
   </head>
   <body>
     <main>
-      <div class="screen">
-        <input type="text" id="screen" readonly>
+      <div class="history">
+      <ul id="history-list"></ul>
+    </div>
+      <div>
+        <div class="screen">
+          <button id="historyShow">⨸</button>
+          <input type="text" id="screen" readonly />
+        </div>
+        <div class="keyboard">
+          <div class="line">
+            <input type="button" class="clear grayBgColor" value="C" />
+            <input type="button" class="grayBgColor" value="%" />
+            <input type="button" class="grayBgColor" value="/" />
+            <input type="button" id="orangeBgColor" value="±" />
+          </div>
+          <div class="line">
+            <input type="button" class="numbers" value="7" />
+            <input type="button" class="numbers" value="8" />
+            <input type="button" class="numbers" value="9" />
+            <input type="button" id="multiply" value="x" />
+          </div>
+          <div class="line">
+            <input type="button" class="numbers" value="4" />
+            <input type="button" class="numbers" value="5" />
+            <input type="button" class="numbers" value="6" />
+            <input type="button" id="orangeBgColor" value="-" />
+          </div>
+          <div class="line">
+            <input type="button" class="numbers" value="1" />
+            <input type="button" class="numbers" value="2" />
+            <input type="button" class="numbers" value="3" />
+            <input type="button" id="orangeBgColor" value="+" />
+          </div>
+          <div class="line">
+            <input id="Zero" class="numbers" type="button" value="0" />
+            <input type="button" class="numbers" value="." />
+            <input type="button" id="orangeBgColor" value="=" />
+          </div>
+        </div>
+      </main>
       </div>
-      <div class="keyboard">
-        <div class="line">
-          <input type="button" class="clear" value="C" />
-          <input type="button" value="%" />
-          <input type="button" value="/" />
-          <input type="button" value="±" />
-        </div>
-        <div class="line">
-          <input type="button" class="numbers" value="7" />
-          <input type="button" class="numbers" value="8" />
-          <input type="button" class="numbers" value="9" />
-          <input type="button" id="multiply" value="x" />
-        </div>
-        <div class="line">
-          <input type="button" class="numbers" value="4" />
-          <input type="button" class="numbers" value="5" />
-          <input type="button" class="numbers" value="6" />
-          <input type="button" value="-" />
-        </div>
-        <div class="line">
-          <input type="button" class="numbers" value="1" />
-          <input type="button" class="numbers" value="2" />
-          <input type="button" class="numbers" value="3" />
-          <input type="button" value="+" />
-        </div>
-        <div class="line">
-          <input id="Zero" class="numbers" type="button" value="0" />
-          <input type="button" class="numbers" value="." />
-          <input type="button" value="=" onclick="eval" />
-        </div>
-      </div>
-    </main>
   </body>
 </html>
